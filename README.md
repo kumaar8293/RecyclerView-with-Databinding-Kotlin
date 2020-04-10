@@ -4,4 +4,6 @@
 ## We are Fetching Data from API using Retrofit and Coroutines.
 ## Displaying the fetched data in RecyclerView 👉 Using Data Binding in RecyclerView Item 👉 Handling RecyclerView Item Click 👉 Using Navigation Architecture to Navigate when RecyclerView is Clicked.
 
-<img src="images/ss1.png" align="middle">
+<p align="center">
+<img src="images/ss1.png" width="380" align="center">
+</p>
