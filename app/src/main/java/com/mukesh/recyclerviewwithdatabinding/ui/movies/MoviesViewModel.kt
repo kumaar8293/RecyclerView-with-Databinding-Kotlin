@@ -22,6 +22,7 @@ class MoviesViewModel(private val repository: MoviesRepository) : ViewModel() {
     private lateinit var job: Job
     fun getMoviesListFromRepository() {
 
+
         job = Coroutines.ioToMainThread(
             { repository.getMovies() },
             {

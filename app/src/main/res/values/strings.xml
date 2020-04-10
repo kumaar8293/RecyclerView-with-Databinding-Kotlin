@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RecyclerView with Databinding Kotlin</string>
+    <string name="ua">UA</string>
 </resources>
