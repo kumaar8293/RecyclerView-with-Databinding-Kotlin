@@ -69,4 +69,9 @@ dependencies {
     //HTTP request Logger
     implementation("com.squareup.okhttp3:logging-interceptor:4.5.0")
 
+
+    //Kodein Dependency Injection
+    implementation "org.kodein.di:kodein-di-generic-jvm:6.2.1"
+    implementation "org.kodein.di:kodein-di-framework-android-x:6.2.1"
+
 }

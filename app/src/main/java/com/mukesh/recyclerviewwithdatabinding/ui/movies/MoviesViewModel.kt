@@ -3,9 +3,9 @@ package com.mukesh.recyclerviewwithdatabinding.ui.movies
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.mukesh.recyclerviewwithdatabinding.utils.Coroutines
-import com.mukesh.recyclerviewwithdatabinding.data.response.MovieItem
 import com.mukesh.recyclerviewwithdatabinding.data.repository.MoviesRepository
+import com.mukesh.recyclerviewwithdatabinding.data.response.MovieItem
+import com.mukesh.recyclerviewwithdatabinding.utils.Coroutines
 import kotlinx.coroutines.Job
 
 class MoviesViewModel(private val repository: MoviesRepository) : ViewModel() {
@@ -20,11 +20,13 @@ class MoviesViewModel(private val repository: MoviesRepository) : ViewModel() {
     val movies: LiveData<List<MovieItem>> get() = _movies
 
     private lateinit var job: Job
-    fun getMoviesListFromRepository() {
+    fun getMoviesListFromRepository(){
 
 
         job = Coroutines.ioToMainThread(
-            { repository.getMovies() },
+            {
+                repository.getMovies()
+            },
             {
                 _movies.value = it
             }

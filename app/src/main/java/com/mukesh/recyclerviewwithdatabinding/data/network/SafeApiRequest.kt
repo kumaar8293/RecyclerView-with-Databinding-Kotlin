@@ -1,5 +1,6 @@
 package com.mukesh.recyclerviewwithdatabinding.data.network
 
+import com.mukesh.recyclerviewwithdatabinding.utils.ApiException
 import retrofit2.Response
 import java.io.IOException
 
@@ -19,4 +20,3 @@ abstract class SafeApiRequest {
     }
 }
 
-class ApiException(message: String) : IOException(message)
